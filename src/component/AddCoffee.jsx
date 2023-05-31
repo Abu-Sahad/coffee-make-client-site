@@ -44,7 +44,7 @@ const AddCoffee = () => {
     return (
         <div className="bg-[#F4F3F0] p-24 rounded-md shadow-md mt-10 mb-10">
             <h1 className="text-3xl font-bold mb-4 text-center">Add New Coffee</h1>
-            <p className="text-center mb-4">It is a long established fact that a reader will be distraceted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here.</p>
+            <p className="text-center mb-4">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here.</p>
             <form onSubmit={handleUpdate}>
                 <div className="md:grid grid-cols-2 gap-4 mb-4">
                     <div>
