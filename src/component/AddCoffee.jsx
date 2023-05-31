@@ -1,3 +1,6 @@
+
+import Swal from 'sweetalert2'
+
 const AddCoffee = () => {
 
     const handleUpdate = e => {
@@ -23,10 +26,17 @@ const AddCoffee = () => {
         })
             .then(res => res.json())
             .then(data => {
-                if(data.insertedId){
-                    
+                if (data.insertedId) {
+                    Swal.fire({
+                        position: 'top-end',
+                        icon: 'success',
+                        title: 'User added Successfully',
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
                 }
                 console.log(data);
+                form.reset()
             })
     }
 
